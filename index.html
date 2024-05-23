@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChapterToo</title>
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="stylesheet" href="css/styling.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="icons/chaptertoofavicon.png" type="image/png" />
+  </head>
+  <body>
+    <header id="navigation">
+      <div class="nav-container">
+        <h1>ChapterToo</h1>
+        <!--Navigation List---------------------------------------------------->
+        <nav class="ct-nav" role="navigation">
+          <div class="ul-wrapper">
+            <ul id="ct-expanded" class="nav-ul" aria-expanded="false">
+              <li class="nav-li">
+                <a href="index.html" class="nav-li-link"> Home </a>
+              </li>
+              <li class="nav-li">
+                <p class="nav-li-p">Menu</p>
+                <ul class="dropdown">
+                  <li><a href="dine_in_menu">Dine In</a></li>
+                  <li><a href="takeaway_menu.html">Takeaway</a></li>
+                  <li><a href="beverages_menu.html">Beverages</a></li>
+                </ul>
+              </li>
+              <li class="nav-li">
+                <p class="nav-li-p">About</p>
+                <ul class="dropdown">
+                  <li><a href="our_story.html">Our Story</a></li>
+                </ul>
+              </li>
+              <li class="nav-li">
+                <p class="nav-li-p">Contact</p>
+                <ul class="dropdown">
+                  <li><a href="booking.html">Book Now</a></li>
+                  <li><a href="facebook.html">Facebook</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!--Welcome Message-------------------------------------------------------->
+    <section id="welcome-section">
+      <img src="images/welcomepagecoffee.png" alt="home image" />
+      <div class="overlay">
+        <p class="msg1">Welcome to Chapter Too!</p>
+        <p class="msg2">
+          We’re a family-owned cafe in the heart of Heathmont with a passion for delicious coffee & mouth-watering food.
+        </p>
+      </div>
+    </section>
+
+    <!--Features List---------------------------------------------------------->
+    <section id="features">
+      <ul class="features-container" aria-expanded="false">
+        <li class="feat-li">
+          <img src="icons/coffee.png" alt="coffee bean icon" />
+          <p>
+            Ethically-Sourced <br />
+            Coffee Beans
+          </p>
+        </li>
+        <li class="feat-li">
+          <img src="icons/table.png" alt="table icon" />
+          <p>
+            Indoor/Outdoor <br />
+            Dining
+          </p>
+        </li>
+        <li class="feat-li">
+          <img src="icons/child.png" alt="child icon" />
+          <p>
+            High Chairs + <br />
+            Change Table <br />
+            Available
+          </p>
+        </li>
+        <li class="feat-li">
+          <img src="icons/wheelchair.png" alt="wheelchair icon" />
+          <p>Disability Access</p>
+        </li>
+      </ul>
+    </section>
+
+    <!--Opening Times and Menu Cards------------------------------------------->
+    <section id="menucards">
+      <div class="openingtimes">
+        <p class="schedulemsg">
+          We are open seven days a week,<br />
+          7am Mon-Fri and 8am Sat-Sun
+        </p>
+        <p class="invitingmsg">
+          Come on in and have a seat at our table. <br />
+          If you don’t have time to sit down and relax, <br />
+          take a look at our takeaway menu!
+        </p>
+      </div>
+
+      <div class="menu-container">
+        <ul class="card-group">
+          <!-- menu card (card 1) -->
+          <li class="card-item">
+            <picture class="card-picture">
+              <img
+                loading="lazy"
+                decoding="async"
+                src="images/pexels-kun-fotografi-506396-3423498.png"
+                alt="room"
+                width="234"
+                height="249"
+              />
+            </picture>
+            <p class="card-title">Dine-In Menu</p>
+            <p class="item-text">Sit down and enjoy one of our specialties</p>
+            <button class="menu-button">View Menu</button>
+          </li>
+
+          <!-- takeaway card (card 2) -->
+          <li class="card-item">
+            <picture class="card-picture">
+              <img
+                loading="lazy"
+                decoding="async"
+                src="images/pexels-doraklimova-9928321.png"
+                alt="room"
+                width="234"
+                height="249"
+              />
+            </picture>
+            <p class="card-title">Takeaway Menu</p>
+            <p class="item-text">Grab a meal to go</p>
+            <button class="menu-button">View Menu</button>
+          </li>
+
+          <!-- beverages card (card 3) -->
+          <li class="card-item">
+            <picture class="card-picture">
+              <img
+                loading="lazy"
+                decoding="async"
+                src="images/pexels-caelideco-3714960.png"
+                alt="room"
+                width="234"
+                height="249"
+              />
+            </picture>
+            <p class="card-title">Beverages Menu</p>
+            <p class="item-text">Pair your meal or commute with a drink</p>
+            <button class="menu-button">View Menu</button>
+          </li>
+
+          <!-- bookings card (card 4) -->
+          <li class="card-item">
+            <picture class="card-picture">
+              <img
+                loading="lazy"
+                decoding="async"
+                src="images/pexels-lamiko-3681641.png"
+                alt="room"
+                width="234"
+                height="249"
+              />
+            </picture>
+            <p class="card-title">Bookings</p>
+            <p class="item-text">Book in advanced for large groups</p>
+            <button class="menu-button">Book Now</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!----Gallery-------------------------------------------------------------->
+
+    <!-- carousel -->
+    <div class="carousel-wrapper">
+      <a href="gallery.html" class="gallery-link"><h2>View Full Gallery</h2></a>
+
+      <div class="carousel">
+        <img class="carousel__photo initial" src="images/GalleryImage1.png" />
+        <img class="carousel__photo" src="images/GalleryImage2.png" />
+        <img class="carousel__photo" src="images/GalleryImage1.png" />
+        <img class="carousel__photo" src="images/GalleryImage2.png" />
+        <img class="carousel__photo" src="images/GalleryImage1.png" />
+        <img class="carousel__photo" src="images/GalleryImage2.png" />
+
+        <div class="carousel__button--next"></div>
+        <div class="carousel__button--prev"></div>
+      </div>
+    </div>
+
+    <!--Footer----------------------------------------------------------------->
+    <footer id="footer">
+      <div class="footer-container">
+        <!-- Logo Group -->
+        <div class="logo-group">
+          <a aria-label="go back to home" class="logo" href="index.html">
+            <img
+              class="logo-img"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="icons/chaptertoologo.png"
+              alt="logo"
+              width="147"
+              height="153"
+            />
+          </a>
+        </div>
+        <!-- Links -->
+        <ul class="footer-ul">
+          <li class="footer-li">
+            <span class="s-header">LOCATION</span>
+          </li>
+          <li class="footer-li">
+            3-4/110 Canterbury Rd <br />
+            Heathmont VIC 3133
+          </li>
+        </ul>
+        <ul class="footer-ul">
+          <li class="footer-li">
+            <span class="s-header">OPENING HOURS</span>
+          </li>
+          <li class="footer-li">WEEKDAYS 7AM - 3PM</li>
+          <li class="footer-li">WEEKENDS 8AM - 3PM</li>
+          <li class="footer-li">PUBLIC HOLIDAYS 8AM - 3PM</li>
+        </ul>
+        <!-- Contact Info -->
+        <ul class="footer-ul">
+          <li class="footer-li">
+            <span class="s-header">CONTACT</span>
+          </li>
+          <li class="footer-li">
+            <img
+              class="s-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="icons/phone.png"
+              alt="phone"
+              width="24"
+              height="24"
+            />
+            PH 03 9720 0544
+          </li>
+          <li class="footer-li">
+            <img
+              class="s-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="icons/mail.png"
+              alt="email"
+              width="24"
+              height="24"
+            />
+            <a class="e-link" href="">Email Us</a>
+          </li>
+          <li class="footer-li">
+            <img
+              class="s-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="icons/facebook.png"
+              alt="pin"
+              width="24"
+              height="24"
+            />
+            <a
+              class="e-link"
+              href="https://www.facebook.com/ChapterToo/"
+              target="_blank"
+              rel="noopener"
+              >Our Facebook</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

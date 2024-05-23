@@ -1,0 +1,450 @@
+/* defining font for webpage */
+html, body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* nav bar styling */
+@media (min-width: 65rem) {
+  #navigation {
+    width: 100%;
+    box-sizing: border-box; 
+    padding: 0 1rem;
+    position: absolute;
+    z-index: 10000;
+  }
+  .nav-container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 72px; 
+    padding-right: 132px; 
+    box-sizing: border-box;
+  }
+  .nav-container h1 {
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    flex-shrink: 0; 
+  }
+  .nav-ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+  }
+  .nav-li {
+    list-style: none;
+    padding: 2rem 0;
+    flex: none; 
+  }
+  .nav-li-link {
+    font-size: 24px; 
+    line-height: 1.5rem;
+    text-decoration: none;
+    margin: 0;
+    color: #ffffff;
+    display: flex;
+    position: relative;
+    white-space: nowrap;
+  }
+  .nav-li-p {
+    font-size: 24px; 
+    line-height: 1.5rem;
+    margin: 0;
+    color: #ffffff;
+    display: flex;
+    position: relative;
+    white-space: nowrap;
+  }
+  .nav-li-link:hover:before {
+    width: 100%;
+  }
+  .nav-li-link.cs-active:before {
+    width: 100%;
+  }
+  .nav-li-link:before {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: var(--primary);
+    opacity: 1;
+    display: flex;
+    position: absolute;
+    bottom: 0rem;
+    left: 0;
+    transition: width 0.3s;
+  }
+  .dropdown {
+    display: none; 
+    position: absolute; 
+    top: 100%; 
+    left: 25%; 
+    transform: translateX(-50%);
+    border-top: none; 
+  }
+  
+  .dropdown.show {
+    display: block;
+  }
+  
+  /* Displayed state */
+  .dropdown.show {
+    display: block;
+  }
+  .nav-li {
+    position: relative; 
+  }
+  .nav-li:hover .dropdown {
+    display: block; 
+  }
+  .dropdown li {
+    padding: 10px; 
+    text-align: left;
+    list-style: none;
+  }
+  .dropdown a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .dropdown li:hover {
+    color: #f0f0f0; 
+  }
+}
+
+/* welcome msg styling */
+@media (min-width: 65rem) {
+  #welcome-section {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    overflow: hidden; 
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;  
+  }
+
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: white;
+    width: calc(100% - 188px); 
+    text-align: left;
+    padding: 10px 20px;  
+    padding-left: 188px; 
+  }
+
+  .overlay .msg1{
+    padding-top: 25px;
+    font-size: 50px;
+  }
+
+  .overlay .msg2{
+    font-size: 25px;
+    margin-right: 1250px;
+  }
+}
+
+/* features list styling */
+@media (min-width: 65rem) {
+  #features {
+    width: 100%;
+    background-color: #48413D; 
+    padding: 2rem 0; 
+  }
+
+  /* Styling the list */
+  .feat-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .features-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 298px;
+    padding-right: 298px;
+    gap: 150px;
+  }
+
+  .feat-li {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    max-width: 200px; 
+    padding: 1rem; 
+  }
+
+  .feat-li img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .feat-li p {
+    font-size: 1rem; 
+    color: #fff; 
+    margin: 0; 
+  }
+}
+
+/* opening times */
+@media (min-width: 65rem) {
+  .openingtimes {
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 4.4rem;
+  }
+  .openingtimes .schedulemsg {
+    font-size: 45px;
+  }
+  .openingtimes .invitingmsg {
+    font-size: 28px;
+  }
+/* menu list styling */
+  .menu-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px;
+    margin-top: 20px; 
+    overflow: hidden;
+  }
+  .card-group {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    overflow: hidden; 
+    padding: inherit;
+  }
+  .card-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #C6C6B560;
+    padding: 15px;
+    overflow: hidden; 
+    border-radius: 10px;
+    height: 400px;
+    width: 278px;
+  }
+  .card-picture img {
+    max-width: 100%;
+    height: 234px;
+    border-radius: 10px;
+  }
+  .card-title {
+    font-size: 26px;
+    color: #48413D;
+    text-align: left;
+  }
+  .item-text {
+    font-size: 15px;
+    color: #48413D;
+    text-align: left;
+  }
+  
+  .menu-button {
+    background-color: #48413D;
+    color: #ffffff;
+    height: 55px;
+    width: 100px;
+    align-content: flex-start;
+    font-size: 14px;
+    border-radius: 15px;
+  }
+}
+
+/* gallery carousel */
+/* Parent wrapper to carousel. Width can be changed as needed. */
+
+.carousel-wrapper {
+  overflow: hidden;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 220px;
+  padding-top: 150px;
+}
+.carousel-wrapper a {
+  color: #48413D;
+  font-size: 25px;
+  text-align: center;
+}
+
+/* Apply 'border-box' to 'box-sizing' so border and padding is included in the width and height. */
+.carousel-wrapper * {
+  box-sizing: border-box;
+}
+
+/* We'll be using the 'transform' property to move the carousel's items, so setting the 'transform-style' to 'preserve-3d' will make sure our nested elements are rendered properly in the 3D space. */
+.carousel {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/* By default we're hiding items (except the initial one) until the JS initiates. Elements are absolutely positioned with a width of 100% (as we're styling for mobile first), letting the content's height dictate the height of the carousel. Our magic property here for all our animation needs is 'transition', taking the properties we wish to animate 'transform' and 'opacity', along with the length of time in seconds. */
+.carousel__photo {
+  opacity: 0;
+  position: absolute;
+  top:0;
+  width: 100%;
+  margin: auto;
+  padding: 1rem 4rem;
+  z-index: 100;
+  transition: transform .5s, opacity .5s, z-index .5s;
+  height: 700px;
+  width: 1500px;
+  
+}
+
+/* Display the initial item and bring it to the front using 'z-index'. These styles also apply to the 'active' item. */
+.carousel__photo.initial,
+.carousel__photo.active {
+  opacity: 1;
+  position: relative;
+  display: flex;
+  z-index: 900;
+  height: 700px;
+  width: 1500px;
+}
+
+/* Set 'z-index' to sit behind our '.active' item. */
+.carousel__photo.prev,
+.carousel__photo.next {
+  z-index: 800;
+}
+
+/* Translate previous item to the left */
+.carousel__photo.prev {
+  transform: translateX(-100%);
+}
+
+/* Translate next item to the right */
+.carousel__photo.next {
+  transform: translateX(100%);
+}
+
+/* Style navigation buttons to sit in the middle, either side of the carousel. */
+.carousel__button--prev,
+.carousel__button--next {
+  position: absolute;
+  top:50%;
+  width: 3rem;
+  height: 3rem;
+  background-color: #FFF;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  cursor: pointer; 
+  z-index: 1001; /* Sit on top of everything */
+  border:1px solid black;
+/*  opacity: 0;  Hide buttons until carousel is initialised 
+  transition:opacity 1s;*/
+}
+
+.carousel__button--prev {
+  left:0;
+}
+
+.carousel__button--next {
+  right:0;
+}
+
+/* Use pseudo elements to insert arrows inside of navigation buttons */
+.carousel__button--prev::after,
+.carousel__button--next::after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 54%;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.carousel__button--next::after {
+  left: 47%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+/* footer */
+@media (min-width: 65rem) {
+  #footer {
+    background-color: #48413D; 
+    padding: 20px; 
+    text-align: center; 
+  }
+  .footer-container {
+    padding-top: 50px;
+    padding-right: 200px;
+    height: 288px;
+    margin: 0 auto; 
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    color: #ffffff;
+  }
+  .footer-ul {
+    list-style: none; 
+    padding: 0; 
+  }
+  .footer-li {
+    height: 25px;
+    display: flex; 
+    margin-bottom: 18px; 
+    text-align: left;
+    font-size: 20px;
+  }
+  .s-header {
+    font-size: 30px;
+  }
+  .s-icon {
+    margin-right: 15px; 
+    vertical-align: middle; 
+    width: 25px;
+    height: 25px;
+  }
+  .logo-img {
+    width: 178px; 
+    height: 187px; 
+    padding-top: 10px;
+    padding-left: 124px;
+    padding-right: 232px;
+  }
+  .f-link {
+    color: #ffffff;
+  }
+  .e-link {
+    color: #ffffff;
+  }
+}
+
+
