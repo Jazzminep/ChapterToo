@@ -131,7 +131,7 @@
     moving = false;
   }
 
-  // make it rain
+
   initCarousel();
 
 }(document));
